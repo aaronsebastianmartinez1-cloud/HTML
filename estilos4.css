@@ -1,64 +1,89 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
 }
 
-body{
-      background: rgb(182, 115, 115);
-      color: black;
-padding: 40px;
-
-
+body {
+    background: #121212;
+    color: #eaeaea;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.7;
+    padding: 50px;
+    max-width: 900px;
+    margin: auto;
 }
 
-header{
-background: rgb(0, 0, 0);
-padding: 15px;
-border-radius: 10px;
+/* HEADER */
+header {
+    background: #1c1c1c;
+    padding: 25px;
+    margin-bottom: 40px;
+    border-left: 4px solid #c5a880; /* detalle elegante dorado */
 }
-nav ul{
+
+/* NAV */
+nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
-    margin-top: 10px;
+    gap: 25px;
+}
 
-}
-nav a{
-color: rgb(255, 255, 255);
-text-decoration: none;
-
-
-}
-nav a:hover{
-color: rgb(255, 0, 0);
-}
-section{
-background: rgb(145, 69, 69);
-margin-top:20px ;
-padding: 15px;
-border-radius: 30px;
-}
-article{
-margin-top: 10px;
-padding: 10px;
-background: red;
-border-radius: 10px;
-}
-footer{
-    margin: 20px;
-    padding: 15px;
-    background: black;
-    color: white;
-    border-radius: 10px;
-    text-align: center;
-
-}
-footer a{
-    color: red;
-    margin: 10px;
+nav a {
+    color: #bfbfbf;
     text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
-footer a:hover{
-    color: white rgb(red, green, blue);
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* SECTIONS */
+section {
+    margin-top: 35px;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+/* Colores intensos pero sofisticados */
+section:nth-of-type(1) {
+    background: #1f2a44; /* azul noche */
+}
+
+section:nth-of-type(2) {
+    background: #3a1f2b; /* vino elegante */
+}
+
+section:nth-of-type(3) {
+    background: #1f3a33; /* verde profundo */
+}
+
+/* ARTICLES */
+article {
+    margin-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+/* FOOTER */
+footer {
+    background: #1c1c1c;
+    margin-top: 60px;
+    padding: 25px;
+    text-align: center;
+    color: #999;
+    border-top: 1px solid #333;
+}
+
+footer a {
+    color: #c5a880; /* dorado elegante */
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+footer a:hover {
+    color: #ffffff;
 }

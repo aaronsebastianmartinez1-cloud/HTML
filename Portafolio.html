@@ -3,94 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
+    <title>Portafolio | Ingeniería de Sistemas</title>
     <link rel="stylesheet" href="Portafolio.css">
 </head>
 
 <body>
-    <div class="container"> 
 
-        <header class="header">
-            <a href="#" class="logo">MiPortafolio</a>
+<div class="container">
 
-            <nav class="navbar">
-                <a href="#" class="active">Inicio</a>
-                <a href="#">Sobre mí</a>
-                <a href="#">Portafolio</a>
-                <a href="index.html">Maquetacion</a>
-                <a href="#">Contacto</a>
-            </nav>
-        </header>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">UAI | Portafolio</div>
 
-        <main>
-            <section class="inicio">
-                
-                <div class="inicio-detalle">
-                    <h1>Hola, soy Aaron 👋</h1>
-                    <h2>Estudiante de Ingenieria de Sistemas</h2>
-                    <p>
-                        Me gusta el Desarrollo y ejecucion de ideas tecnologicas.
-                    </p>
+        <nav class="navbar">
+            <a href="#" class="active">Inicio</a>
+            <a href="#about">Sobre mí</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#contact">Contacto</a>
+            <a href="index.html">Maquetacion</a>
+        </nav>
+    </header>
 
-                    <a href="#" class="btn">Descargar CV</a>
+    <!-- HERO -->
+    <section class="hero">
 
-                    <div class="social-icons">
-                        <a href="#">🌐</a>
-                        <a href="#">💼</a>
-                        <a href="#">🐱</a>
-                    </div>
-                </div>
+        <div class="hero-text">
+            <h1>Aaron</h1>
+            <h2>Ingeniería de Sistemas</h2>
+            <p>
+                Estudiante de la Universidad Autónoma de Ica (UAI), enfocado en desarrollo
+                de software, bases de datos y soluciones tecnológicas.
+            </p>
 
-                <div class="perfil">
-                    <img src="https://media.newyorker.com/photos/59095bb86552fa0be682d9d0/master/pass/Monkey-Selfie.jpg" alt="Perfil">
-                </div>
-<!-- SOBRE MI -->
-<section class="sobre-mi">
-    <h2>Sobre mí</h2>
-    <p>
-        Soy estudiante de Ingeniería de Sistemas con interés en el desarrollo web
-        y la creación de soluciones tecnológicas eficientes. Me enfoco en aprender
-        constantemente y mejorar mis habilidades.
-    </p>
-</section>
-
-<!-- HABILIDADES -->
-<section class="habilidades">
-    <h2>Habilidades</h2>
-    <div class="skills-grid">
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">Git</div>
-    </div>
-</section>
-
-<!-- PORTAFOLIO -->
-<section class="portafolio">
-    <h2>Proyectos</h2>
-    <div class="proyectos">
-        <div class="card">
-            <h3>Proyecto 1</h3>
-            <p>Landing page moderna y responsive.</p>
+            <a href="#" class="btn">Descargar CV</a>
         </div>
-        <div class="card">
-            <h3>Proyecto 2</h3>
-            <p>Aplicación web con JavaScript.</p>
-        </div>
-        <div class="card">
-            <h3>Proyecto 3</h3>
-            <p>Sitio web corporativo.</p>
-        </div>
-    </div>
-</section>
 
-<!-- FOOTER -->
-<footer class="footer">
-    <p>© 2026 Aaron - Todos los derechos reservados</p>
-</footer>
-            </section>
-        </main>
+        <div class="hero-img">
+            <img src="https://media.newyorker.com/photos/59095bb86552fa0be682d9d0/master/pass/Monkey-Selfie.jpg" alt="perfil">
+        </div>
 
-    </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section id="about" class="section">
+        <h2>Sobre mí</h2>
+        <p>
+            Soy estudiante de Ingeniería de Sistemas en la UAI. Me interesa el desarrollo
+            de software, la arquitectura de sistemas y la resolución de problemas mediante
+            tecnología. Busco seguir creciendo en el área de desarrollo web y backend.
+        </p>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="skills" class="section">
+        <h2>Habilidades</h2>
+
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Java</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">Git</div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="projects" class="section">
+        <h2>Proyectos Académicos</h2>
+
+        <div class="projects">
+
+            <div class="card">
+                <h3>Sistema de Gestión</h3>
+                <p>Aplicación básica para control de estudiantes y notas.</p>
+            </div>
+
+            <div class="card">
+                <h3>Base de Datos MySQL</h3>
+                <p>Diseño de base de datos para sistema académico universitario.</p>
+            </div>
+
+            <div class="card">
+                <h3>Web Informativa</h3>
+                <p>Landing page para proyecto de curso de desarrollo web.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contact" class="section">
+        <h2>Contacto</h2>
+
+        <p>Email: aaron@example.com</p>
+        <p>Universidad: UAI - Ingeniería de Sistemas</p>
+
+        <div class="social">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 Aaron - Ingeniería de Sistemas UAI</p>
+    </footer>
+
+</div>
+
 </body>
 </html>

@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    height: 100vh;
+    background: rgb(72, 80, 185);
+    padding: 30px;
+
+}
+.container{
+    height: 100vh;
+    background: rgb(177, 212, 252);
+    padding: 30px;
+}
+header{
+    padding: 40px;
+    display: flex ;
+    justify-content: last baseline;
+    background: rgb(210, 224, 240);
+    border-radius: 8px;
+}
+.logo{
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(212, 71, 71);
+    text-decoration: none;
+}
+.logo:hover{
+    transform: scale(1,1.5);
+    color: rgb(248, 0, 0);
+}
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 100px 5% 0;
+}
+.inicio-detalle h1{
+    font-size: 44px;
+    background: rgb(28, 78, 216);
+    background-clip: text;
+    color: transparent;
+}
+.inicio-detalle h2 {
+    font-size: 18px;
+    color: rgb(103, 77, 218);
+    margin-bottom: 15px;
+}
+.inicio-detalle p {
+    margin: 20px;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: rgb(216, 127, 18);
+}
+.btn {
+    display: inline-block;
+    padding: 17px 28px;
+    background: purple;
+    border: 3px;
+    border-radius: 40px;
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: 600;
+}
+.btn:hover {
+    background: transparent;
+    transform: translateY(-5px);
+    color: purple;
+}
+.perfil {
+    width: clamp(980px, 25vw, 380px);
+    height: clamp(180px, 25vw, 380px);
+}
+.perfil img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    border: 7px solid;
+    color: brown;
+
+}
+.perfil:hover img {
+    transform: scale(1.1);
+
+}
+.social-icons a{
+    font-size: 40px;
+    color: blueviolet;
+    text-decoration: none;
+}
+.social-icons a:hover{
+    color: aqua;
+}

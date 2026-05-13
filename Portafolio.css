@@ -344,3 +344,102 @@ body {
     background: #0ea5e9;
     transform: translateY(-3px);
 }
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+/* Tablets y móviles */
+@media (max-width: 768px) {
+
+    /* HEADER */
+    .header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar a {
+        margin-left: 0;
+    }
+
+    /* HERO */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-text h2 {
+        font-size: 18px;
+    }
+
+    .hero-img img {
+        width: 160px;
+    }
+
+    /* SECCIONES */
+    .skills {
+        justify-content: center;
+    }
+
+    /* MODAL */
+    .modal-content {
+        width: 90%;
+    }
+}
+
+/* Celulares pequeños */
+@media (max-width: 480px) {
+
+    .hero-text h1 {
+        font-size: 26px;
+    }
+
+    .hero-text h2 {
+        font-size: 16px;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+/* BOTÓN HAMBURGUESA */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #38bdf8;
+}
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+}

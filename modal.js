@@ -34,3 +34,7 @@ window.onclick = function(e){
         modal.style.display = "none";
     }
 }
+function toggleMenu() {
+    const navbar = document.getElementById("navbar");
+    navbar.classList.toggle("active");
+}

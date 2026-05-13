@@ -248,3 +248,36 @@ body {
     cursor: pointer;
     font-size: 22px;
 }
+/* BOTÓN VOLVER AL INICIO */
+.top-btn{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    background: #38bdf8;
+    color: #0f172a;
+
+    padding: 12px 18px;
+    border-radius: 50px;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+
+    transition: 0.3s ease;
+    z-index: 1000;
+}
+
+/* EFECTO HOVER */
+.top-btn:hover{
+    background: #0ea5e9;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+/* EFECTO CLICK */
+.top-btn:active{
+    transform: scale(0.95);
+}

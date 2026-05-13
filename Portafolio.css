@@ -297,3 +297,50 @@ body {
         opacity: 1;
     }
 }
+/* FOOTER */
+.footer {
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+
+    background: #111827;
+    border-radius: 12px;
+    color: #94a3b8;
+}
+
+/* LINKS SOCIALES */
+.social {
+    margin: 15px 0;
+}
+
+.social a {
+    margin: 0 10px;
+    color: #38bdf8;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #0ea5e9;
+}
+
+/* BOTÓN VOLVER ARRIBA */
+.top-btn {
+    display: inline-block;
+    margin-top: 10px;
+
+    padding: 10px 16px;
+    background: #38bdf8;
+    color: #0f172a;
+
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.top-btn:hover {
+    background: #0ea5e9;
+    transform: translateY(-3px);
+}

@@ -212,3 +212,39 @@ body {
 .week-card a:hover {
     color: #0ea5e9;
 }
+/* FONDO OSCURO */
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.7);
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* CAJA */
+.modal-content{
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    width: 400px;
+    color: white;
+    position: relative;
+}
+
+/* BOTON CERRAR */
+.close{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 22px;
+}

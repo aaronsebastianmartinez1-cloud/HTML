@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio | Ingeniería de Sistemas</title>
+
     <link rel="stylesheet" href="Portafolio.css">
 </head>
 
@@ -16,47 +17,28 @@
         <div class="logo">UAI | Portafolio</div>
 
         <nav class="navbar">
-            <a href="#" class="active">Inicio</a>
-            <a href="#about">Sobre mí</a>
+            <a href="#">Inicio</a>
             <a href="#skills">Habilidades</a>
             <a href="#projects">Proyectos</a>
-            <a href="#contact">Contacto</a>
-            <a href="index.html">Maquetacion</a>
             <a href="#weeks">Trabajos</a>
+            <a href="index.html">Maquetacion</a>
         </nav>
     </header>
 
     <!-- HERO -->
     <section class="hero">
-
         <div class="hero-text">
             <h1>Aaron</h1>
             <h2>Ingeniería de Sistemas</h2>
-            <p>
-                Estudiante de la Universidad Autónoma de Ica (UAI), enfocado en desarrollo
-                de software, bases de datos y soluciones tecnológicas.
-            </p>
-
-            <a href="#" class="btn">Descargar CV</a>
+            <p>Estudiante UAI enfocado en desarrollo web y bases de datos.</p>
         </div>
 
         <div class="hero-img">
-            <img src="https://e7.pngegg.com/pngimages/649/824/png-clipart-background-check-computer-icons-broker-logo-employment-others-text-resume.png" alt="perfil">
+            <img src="https://w7.pngwing.com/pngs/875/44/png-transparent-computer-icons-user-profile-cv-miscellaneous-cdr-face-thumbnail.png" alt="perfil">
         </div>
-
     </section>
 
-    <!-- SOBRE MI -->
-    <section id="about" class="section">
-        <h2>Sobre mí</h2>
-        <p>
-            Soy estudiante de Ingeniería de Sistemas en la UAI. Me interesa el desarrollo
-            de software, la arquitectura de sistemas y la resolución de problemas mediante
-            tecnología. Busco seguir creciendo en el área de desarrollo web y backend.
-        </p>
-    </section>
-
-    <!-- HABILIDADES -->
+    <!-- SKILLS -->
     <section id="skills" class="section">
         <h2>Habilidades</h2>
 
@@ -64,113 +46,82 @@
             <div class="skill">HTML</div>
             <div class="skill">CSS</div>
             <div class="skill">JavaScript</div>
-            <div class="skill">Java</div>
             <div class="skill">MySQL</div>
-            <div class="skill">Git</div>
-            
         </div>
     </section>
 
-    <!-- PROYECTOS -->
+    <!-- PROJECTS -->
     <section id="projects" class="section">
-        <h2>Proyectos Académicos</h2>
+        <h2>Proyectos</h2>
 
         <div class="projects">
-
             <div class="card">
                 <h3>Sistema de Gestión</h3>
-                <p>Aplicación básica para control de estudiantes y notas.</p>
+                <p>Control de estudiantes.</p>
             </div>
-
-            <div class="card">
-                <h3>Base de Datos MySQL</h3>
-                <p>Diseño de base de datos para sistema académico universitario.</p>
-            </div>
-
-            <div class="card">
-                <h3>Web Informativa</h3>
-                <p>Landing page para proyecto de curso de desarrollo web.</p>
-            </div>
-
-        </div>
-        <!-- TRABAJOS 16 SEMANAS -->
-<section id="weeks" class="section">
-    <h2>Trabajos de las 16 Semanas</h2>
-
-    <div class="weeks-container">
-
-        <div class="week-card">
-            <h3>Semana 1</h3>
-            <p>Introducción al curso y estructura básica HTML.</p>
-            <a href="#">Ver trabajo</a>
-        </div>
-
-        <div class="week-card">
-            <h3>Semana 2</h3>
-            <p>Etiquetas semánticas y diseño básico con CSS.</p>
-            <a href="#">Ver trabajo</a>
-        </div>
-
-        <div class="week-card">
-            <h3>Semana 3</h3>
-            <p>Uso de Flexbox y diseño responsive.</p>
-            <a href="#">Ver trabajo</a>
-        </div>
-
-        <div class="week-card">
-            <h3>Semana 4</h3>
-            <p>Maquetación de páginas web modernas.</p>
-            <a href="#">Ver trabajo</a>
-        </div>
-
-        <!-- DUPLICA HASTA LA SEMANA 16 -->
-
-    </div>
-</section>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contact" class="section">
-        <h2>Contacto</h2>
-
-        <p>Email: aaron@example.com</p>
-        <p>Universidad: UAI - Ingeniería de Sistemas</p>
-
-        <div class="social">
-            <a href="#">GitHub</a>
-            <a href="#">LinkedIn</a>
-            
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <p>© 2026 Aaron - Ingeniería de Sistemas UAI</p>
-        <a href="#" class="top-btn">VOLVER AL INICIO</a>
-    </footer>
+    <!-- WEEKS -->
+    <section id="weeks" class="section">
+        <h2>Trabajos de las Semanas</h2>
+
+        <div class="weeks-container">
+
+            <div class="week-card">
+                <h3>Semana 1</h3>
+                <p>Introducción a HTML y estructura web.</p>
+                <button class="btn" onclick="openModal(1)">👁 Ver trabajo</button>
+            </div>
+
+            <div class="week-card">
+                <h3>Semana 2</h3>
+                <p>CSS básico y estilos.</p>
+                <button class="btn" onclick="openModal(2)">👁 Ver trabajo</button>
+            </div>
+
+            <div class="week-card">
+                <h3>Semana 3</h3>
+                <p>Flexbox y diseño responsive.</p>
+                <button class="btn" onclick="openModal(3)">👁 Ver trabajo</button>
+            </div>
+
+            <div class="week-card">
+                <h3>Semana 4</h3>
+                <p>Maquetación de páginas web.</p>
+                <button class="btn" onclick="openModal(4)">👁 Ver trabajo</button>
+            </div>
+
+            <div class="week-card">
+                <h3>Semana 5</h3>
+                <p>Introducción a JavaScript.</p>
+                <button class="btn" onclick="openModal(5)">👁 Ver trabajo</button>
+            </div>
+
+        </div>
+    </section>
 
 </div>
-<button id="openModal" class="btn">
-    Ver Proyecto
-</button>
 
+<!-- MODAL ÚNICO -->
 <div class="modal" id="modal">
 
     <div class="modal-content">
 
-        <span class="close">&times;</span>
+        <span class="close" onclick="closeModal()">&times;</span>
 
-        <h2>Proyecto Web</h2>
+        <h2 id="modalTitle">Semana</h2>
 
-        <p>
-            Este proyecto fue realizado usando HTML y CSS.
-        </p>
+        <p id="modalText"></p>
+
+        <button class="btn" id="modalBtn">Continuar</button>
 
     </div>
 
 </div>
-<script src="script.js"></script>
-</body>
 
-</div>
+<!-- JS -->
+<script src="modal.js"></script>
+
+</body>
 </html>

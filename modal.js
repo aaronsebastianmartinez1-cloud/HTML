@@ -38,3 +38,16 @@ function toggleMenu() {
     const navbar = document.getElementById("navbar");
     navbar.classList.toggle("active");
 }
+const themeBtn = document.getElementById("theme-toggle");
+
+themeBtn.addEventListener("click", () => {
+
+    document.body.classList.toggle("light-mode");
+
+    if(document.body.classList.contains("light-mode")){
+        themeBtn.innerHTML = "🌙";
+    }else{
+        themeBtn.innerHTML = "☀️";
+    }
+
+});
